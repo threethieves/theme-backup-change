@@ -55,7 +55,7 @@ module.exports = ${exportName};
         const dir = path.dirname(filePath);
         const exists = await checkFileExists(dir);
         if (!exists) {
-            await fs.mkdirSync(dir, { recursive: true });
+            await fs.mkdir(dir, { recursive: true });
         }
   
         // 写入文件
