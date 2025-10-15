@@ -5,8 +5,12 @@
   "main": "build.js",
   "scripts": {
     "dev": "node script.js",
+    "create": "node create.js",
     "build": "node build.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
 }
