@@ -1,0 +1,12 @@
+{
+  "name": "theme-backup-change",
+  "version": "1.0.0",
+  "description": "主题文件处理",
+  "main": "build.js",
+  "scripts": {
+    "dev": "node script.js",
+    "build": "node build.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
