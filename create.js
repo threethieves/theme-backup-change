@@ -71,15 +71,18 @@ module.exports = ${exportName};
 const init = async () => {
     const list = await parseDataFileToArray(dataPath)
     const res = list.map(item => {
-        const {data, ...rest} = item
+        const { data } = item
         const res = decodeStr(data)
-        return {
-            ...rest,
-            data: res
-        }
+
+        item.data = res
+        return item
     })
     // 使用示例
     writeArrayToJsFile(res, outputPath)
 }
 
 init()
+
+module.exports = {
+  writeArrayToJsFile
+}
